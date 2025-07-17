@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MemoTest - Juego</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemoTest - Juego</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="juego-contenedor">
-    <header>
-      <h1>MemoTest</h1>
-      <div id="info-jugador">
-        Jugador: <span id="nombre-jugador"></span> | Puntaje: <span id="puntaje">0</span>
-      </div>
-    </header>
-    <main>
-      <section id="tablero"></section>
-      <button id="boton-instrucciones" class="btn-instrucciones">Instrucciones</button>
-    </main>
-  </div>
-
-  <!-- instrucciones -->
-  <div id="contenedor-instrucciones" class="modal-instrucciones">
-    <div id="modal-contenido" class="modal-instrucciones-contenido">
-      <span id="cerrar" class="cerrar-instrucciones">&times;</span>
-      <h2>¿Cómo se juega?</h2>
-      <p>
-        Encontrá todos los pares de cartas con la menor cantidad de intentos posibles.<br>
-        Hacé clic en dos cartas para ver si coinciden. Si son iguales, quedan visibles.<br>
-        ¡Tu memoria es la clave para ganar!
-      </p>
+    <div class="juego-contenedor">
+        <header>
+            <h1>MemoTest</h1>
+            <div id="info-jugador">
+                Jugador: <span id="nombre-jugador"></span> | Puntaje: <span id="puntaje">0</span>
+            </div>
+        </header>
+        <main>
+            <section id="tablero"></section>
+            <button id="boton-instrucciones" class="btn-instrucciones">Instrucciones</button>
+        </main>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-  
+    <!-- instrucciones -->
+    <div id="contenedor-instrucciones" class="modal-instrucciones">
+        <div id="modal-contenido" class="modal-instrucciones-contenido">
+            <span id="cerrar" class="cerrar-instrucciones">&times;</span>
+            <h2>¿Cómo se juega?</h2>
+            <p>
+                Encontrá todos los pares de cartas con la menor cantidad de intentos posibles.<br>
+                Hacé clic en dos cartas para ver si coinciden. Si son iguales, quedan visibles.<br>
+                ¡Tu memoria es la clave para ganar!
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
