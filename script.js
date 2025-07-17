@@ -1,3 +1,18 @@
+    //INICIO
+    const modal = document.getElementById("contenedor-instrucciones");
+    const btnAbrir = document.getElementById("boton-instrucciones");
+    const btnCerrar = document.getElementById("cerrar");
+
+    btnAbrir.onclick = () => modal.style.display = "block";
+    btnCerrar.onclick = () => modal.style.display = "none";
+    window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
+
+    document.getElementById("form-nombre").onsubmit = (e) => {
+      e.preventDefault();
+      localStorage.setItem("nombreJugador", document.getElementById("nombre").value);
+      window.location.href = "memotest.html";
+    };
+
 document.addEventListener("DOMContentLoaded", () => {
   const nombre = localStorage.getItem("nombreJugador");
   if (nombre) {
@@ -6,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// MEMOTEST
 let puntaje = 0;
 let primera = null;
 let segunda = null;
